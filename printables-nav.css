@@ -1,0 +1,117 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    background: url(./bg7.jpeg) no-repeat center center/cover;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    position: sticky;
+    top: 30px;
+    background-color: rgba(0, 0, 0, 0.089);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    max-width: 1600px;
+    margin-top: 20px;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-container .navbar-menu{
+  display: flex;
+  text-align: center;
+  gap: 1.5rem;
+  list-style: none;
+
+}
+
+.navbar-container .navbar-menu li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    font-size: 500;
+    padding: 4px 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all  0.7s ease;
+    white-space: nowrap;
+}
+
+.navbar-container .navbar-menu li a:hover{
+    color: #000000;
+    /* background: rgba(162, 198, 255, 0.235); */
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.301),rgba(213, 229, 255, 0.267));
+    /* border: 2px solid rgba(255, 255, 255, 0.12); */
+}
+
+.navbar-toggle{
+    background: transparent;
+    display: none;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #ffffff;
+    transition: all 0.3 ease-in-out;
+}
+
+@media (max-width: 880px){
+    .navbar{
+        background-clip: none;
+    }
+    .navbar-container .navbar-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap:1.7rem;
+        position: absolute;
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        left: 0;
+        padding: 5rem 1.5rem;    
+        box-shadow: 0 10px 10px rgba(0,0,0,0.5);   
+        backdrop-filter: blur(10px);
+     }
+     .navbar-toggle{
+        display: block;
+        z-index: 999;
+     }
+}
