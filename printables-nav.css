@@ -11,7 +11,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
-    background: url(./bg7.jpeg) no-repeat center center/cover;
+    background: url(./image/bg7.jpeg) no-repeat center center/cover;
 }
 
 .navbar{
