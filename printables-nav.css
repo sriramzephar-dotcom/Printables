@@ -18,7 +18,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 60px;
     width: 90%;
     border-radius: 10px;
     margin: auto;
@@ -38,7 +38,7 @@ body{
     width: 100%;
     padding: 0 1rem;
     max-width: 1600px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .navbar-logo {
@@ -60,7 +60,7 @@ body{
 .navbar-container .navbar-menu li a{
     text-decoration: none;
     color: whitesmoke;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-size: 500;
     padding: 4px 20px;
     border-radius: 10px;
@@ -95,9 +95,11 @@ body{
 
 @media (max-width: 880px){
     .navbar{
-        background-clip: none;
+        backdrop-filter: none;
+        /* background-color: none; */
     }
     .navbar-container .navbar-menu {
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         gap:1.7rem;
@@ -112,13 +114,41 @@ body{
         border-radius: 10px 0 0 0;
        
      }
+
+     .navbar-container .navbar-menu.active{
+display: flex;
+     }
+
      .navbar-toggle{
         display: block;
         z-index: 999;
      }
+ .navbar-toggle.active .bar:nth-child(2){
+    opacity: 0;
+ }
+ .navbar-toggle.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+ }
+  .navbar-toggle.active .bar:nth-child(3){
+   transform: translateY(-8px) rotate(-45deg);
+ }
+
      .navbar-container .navbar-menu li{
         margin-top: 25px;
         line-height: 5px;
      }
     
+}
+
+@media (max-width: 480px){
+.navbar-container{
+    padding: 0 1rem;
+}
+.navbar-logo{
+    font-size: 1.7rem;
+}
+.navbar-container .navbar-menu li a{
+    font-size: 1.2rem;
+    padding: 3px 15px;
+}
 }
