@@ -11,7 +11,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
-    background: url(./image/bg7.jpeg) no-repeat center center/cover;
+    background: url(./image/bg12.webp) no-repeat center center/cover;
 }
 
 .navbar{
@@ -24,8 +24,8 @@ body{
     margin: auto;
     position: sticky;
     top: 30px;
-    background-color: rgba(0, 0, 0, 0.089);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.299);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5px);
     z-index: 999;
 }
@@ -108,7 +108,8 @@ body{
         left: 0;
         padding: 5rem 1.5rem;    
         box-shadow: 0 10px 10px rgba(0,0,0,0.5);   
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px);
+        border-radius: 10px 0 0 0;
      }
      .navbar-toggle{
         display: block;
