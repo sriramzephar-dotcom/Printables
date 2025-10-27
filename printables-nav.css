@@ -22,7 +22,7 @@ body{
     width: 90%;
     border-radius: 10px;
     margin: auto;
-    position: sticky;
+    /* position: sticky; */
     top: 30px;
     background-color: rgba(0, 0, 0, 0.299);
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
@@ -92,6 +92,36 @@ body{
     background: #ffffff;
     transition: all 0.3 ease-in-out;
 }
+.main-container{
+    width: 90%;
+    
+}
+.child-container{
+    width: 100%;
+    margin: auto;
+}
+
+.main-container .child-container .item-1 {
+     background-color: rgba(0, 0, 0, 0.308);
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 180px;
+    width: 200px;
+    margin: auto;
+
+}
+.main-container .child-container .item-1 h4{
+ color: aliceblue;   
+ text-align: center;
+ margin-top: 20px;
+}
+
 
 @media (max-width: 880px){
     .navbar{
