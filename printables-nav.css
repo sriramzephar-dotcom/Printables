@@ -12,6 +12,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
     background: url(./image/bg12.webp) no-repeat center center/cover;
+    
 }
 
 .navbar{
@@ -129,6 +130,9 @@ body{
         backdrop-filter: none;
         /* background-color: none; */
     }
+    .navbar-container{
+        margin-top: 5px;
+    }
     .navbar-container .navbar-menu {
         display: none;
         flex-direction: column;
@@ -204,7 +208,7 @@ display: flex;
     margin: auto;
    position: absolute;
    top: 220px;
-   left: 300px;
+   /* left: 300px; */
 }
 
 #txt1{
@@ -244,7 +248,7 @@ h4{
     margin: auto;
    position: absolute;
    top: 220px;
-   left: 100px;
+   
 }
 
 #txt1{
@@ -260,7 +264,7 @@ h4{
 }
 #btn1{
    padding: 5px 10px 5px 10px;
-   margin-left: 300px;
+   
    margin-top: 20px;
 }
 
@@ -283,7 +287,7 @@ h4{
     margin: auto;
    position: absolute;
    top: 220px;
-   left: 50px;
+   
 }
 
 #txt1{
@@ -299,7 +303,7 @@ h4{
 }
 #btn1{
    padding: 5px 10px 5px 10px;
-   margin-left: 20px;
+  
    margin-top: 20px;
 }
 
